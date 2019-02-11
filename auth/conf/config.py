@@ -17,7 +17,3 @@ JWT_BLACKLIST_ENABLED = True
 # シーケンスやセットを渡して、複数の種類をチェックする。デフォルトは（ 'access'、 'refresh'）
 # ブラックリストが有効になっている場合にのみ使用される
 JWT_BLACKLIST_TOKEN_CHECKS = ['access', 'refresh']
-
-# __pycache__ ディレクトリを生成させない
-import sys
-sys.dont_write_bytecode = True

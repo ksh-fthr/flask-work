@@ -1,4 +1,4 @@
-from manage import db
+from auth import db
 
 
 class RevokedTokenModel(db.Model):
