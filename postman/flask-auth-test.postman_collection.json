@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "cb9c0984-0572-4178-8213-a49a97180f6e",
-		"name": "flask-auth-test",
+		"name": "flask-app-test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
