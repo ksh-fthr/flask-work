@@ -3,7 +3,7 @@ from flask_jwt_extended import (
     jwt_required,
     get_raw_jwt
 )
-from auth.models.revoked_token import RevokedTokenModel
+from server.models.revoked_token import RevokedTokenModel
 
 
 class UserLogoutAccess(Resource):

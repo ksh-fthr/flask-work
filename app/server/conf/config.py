@@ -1,5 +1,5 @@
 # DB への PATH
-SQLALCHEMY_DATABASE_URI = 'sqlite:///db/auth.sqlite3'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///db/app.sqlite3'
 
 # データベースの設定と、セッション情報を暗号化するためのキー
 import os

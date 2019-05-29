@@ -5,17 +5,17 @@
   "python.linting.pep8Enabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": [
-    "--ignore=E111, E114, E402, E501, E722, F401"
+      "--ignore=E111, E114, E127, E402, E501, E722, F401"
   ],
   "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Args": [
-    "--indent-size=2",
-    "--ignore=E402"
+      "--indent-size=2",
+      "--ignore=E111, E114, E127, E402, E501, E722, F401"
   ],
   "[python]": {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": false,
-    "editor.formatOnType": false
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": false,
+      "editor.formatOnType": false
   }
 }

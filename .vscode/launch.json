@@ -10,12 +10,14 @@
       "request": "launch",
       "module": "flask",
       "env": {
-        "FLASK_APP": "manage.py",
+        "FLASK_APP": "app/run.py",
         // __pycache__ を生成しない
         "PYTHONDONTWRITEBYTECODE": 1
       },
       "args": [
         "run",
+        "--host='0.0.0.0'",
+        "--port=3000",
         "--no-debugger",
         "--no-reload"
       ]

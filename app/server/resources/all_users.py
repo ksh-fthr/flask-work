@@ -1,5 +1,5 @@
 from flask_restful import Resource
-from auth.models.user import UserModel
+from server.models.user import UserModel
 
 
 class AllUsers(Resource):
