@@ -60,18 +60,18 @@ class Zip(Resource):
     output_path3 = '{}_{}_{}.csv'.format('好きな', '文字3', date_time)
 
     # CSVファイルを作成する
-    with open(self.__make_file_path(TMP_PATH, output_path1), 'w') as fa:
-      writer = csv.writer(fa, quotechar='"', quoting=csv.QUOTE_ALL, lineterminator="\n")
+    with open(self.__make_file_path(TMP_PATH, output_path1), 'w') as f1:
+      writer = csv.writer(f1, quotechar='"', quoting=csv.QUOTE_ALL, lineterminator="\n")
       writer.writerow(header_record)
       writer.writerow(body_record)
 
-    with open(self.__make_file_path(TMP_PATH, output_path2), 'w') as fa:
-      writer = csv.writer(fa, quotechar='"', quoting=csv.QUOTE_ALL, lineterminator="\n")
+    with open(self.__make_file_path(TMP_PATH, output_path2), 'w') as f2:
+      writer = csv.writer(f2, quotechar='"', quoting=csv.QUOTE_ALL, lineterminator="\n")
       writer.writerow(header_record)
       writer.writerow(body_record)
 
-    with open(self.__make_file_path(TMP_PATH, output_path3), 'w') as fa:
-      writer = csv.writer(fa, quotechar='"', quoting=csv.QUOTE_ALL, lineterminator="\n")
+    with open(self.__make_file_path(TMP_PATH, output_path3), 'w') as f3:
+      writer = csv.writer(f3, quotechar='"', quoting=csv.QUOTE_ALL, lineterminator="\n")
       writer.writerow(header_record)
       writer.writerow(body_record)
 
