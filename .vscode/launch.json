@@ -12,7 +12,11 @@
       "env": {
         "FLASK_APP": "app/run.py",
         // __pycache__ を生成しない
-        "PYTHONDONTWRITEBYTECODE": 1
+        "PYTHONDONTWRITEBYTECODE": "1",
+        // 開発環境を指定する
+        // + https://code.visualstudio.com/docs/python/tutorial-flask
+        "FLASK_ENV": "development",
+        "FLASK_DEBUG": "0"
       },
       "args": [
         "run",
