@@ -13,6 +13,13 @@ Python のマイクロフレームワークである `Flask` の学習用リポ�
 `requirements.txt` で管理しています。
 本リポジトリを利用する際は、事前に下記を実行してライブラリのインストールを行い、依存関係を解決しておいてください。
 
-```
+```bash
 $ pip install -r requirements.txt
+```
+
+# 起動
+次のコマンドでアプリケーションが起動します。
+
+```bash
+$ python3 app/run.py
 ```
