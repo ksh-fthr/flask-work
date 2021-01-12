@@ -6,8 +6,8 @@ Python のマイクロフレームワークである [Flask](https://palletsproj
 現在は次のブランチがあります。
 
 * [feat/csv](https://github.com/ksh-fthr/flask-work/tree/feat/csv)
-  * CSVデータを返却する実装を試すブランチ
-  * Qiita の [[Angular] CSV ファイルを出力したときにやったこと](https://qiita.com/ksh-fthr/items/29db7c5c7268ee1802c5) においてバックエンドの実装で扱った
+  * CSV データを返却する API 実装を試すブランチ
+  * Qiita の [[Angular] CSV ファイルを出力したときにやったこと](https://qiita.com/ksh-fthr/items/29db7c5c7268ee1802c5) でバックエンドの実装として扱った
 
 # バージョン
 次のバージョンで確認を行っています。
