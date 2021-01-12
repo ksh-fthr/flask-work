@@ -8,6 +8,10 @@ Python のマイクロフレームワークである [Flask](https://palletsproj
 * [feat/csv](https://github.com/ksh-fthr/flask-work/tree/feat/csv)
   * CSV データを返却する API 実装を試すブランチ
   * Qiita の [[Angular] CSV ファイルを出力したときにやったこと](https://qiita.com/ksh-fthr/items/29db7c5c7268ee1802c5) でバックエンドの実装として扱った
+* [feat/zip](https://github.com/ksh-fthr/flask-work/tree/feat/zip)
+  * base64 文字列化した ZIP ファイルを返却する API 実装を試すブランチ
+  * Qiita の [[Flask] CSV ファイルを ZIP に固める](https://qiita.com/ksh-fthr/items/df875613d7e36f94a679) で扱った
+  * また同じく Qiita の [[Angular] base64 文字列をバイナリに戻してダウンロードする](https://qiita.com/ksh-fthr/items/b3e3afb7f8e51759a1ed) でバックエンドの実装として扱った
 
 # バージョン
 次のバージョンで確認を行っています。
