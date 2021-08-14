@@ -4,3 +4,6 @@ flask-jwt-extended==3.17.0
 flask-sqlalchemy==2.3.1
 flask-cors==3.0.7
 passlib==1.7.1
+# 下記の問題に対応するため 1.4.0 未満のバージョンを入れている
+# https://stackoverflow.com/questions/66663963/flask-sqlalchemy-attributeerror-cant-set-attribute
+SQLAlchemy<1.4.0
