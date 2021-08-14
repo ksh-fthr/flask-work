@@ -32,7 +32,7 @@ api.add_resource(router.AllUsers, '/users')
 api.add_resource(router.Csv, '/csv')
 api.add_resource(router.Zip, '/zip')
 
-# DB
+
 @app.before_first_request
 def create_tables():
   """
