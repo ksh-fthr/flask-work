@@ -18,8 +18,8 @@ Python のマイクロフレームワークである [Flask](https://palletsproj
 
 |        | バージョン |
 | ------ | ---------- |
-| Python | 3.7.x      |
-| Flask  | 1.0.2      |
+| Python | 3.9.13     |
+| Flask  | 2.1.0      |
 
 # ライブラリのインストール
 `requirements.txt` で管理しています。
