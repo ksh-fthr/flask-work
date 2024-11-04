@@ -14,11 +14,12 @@ Python のマイクロフレームワークである [Flask](https://palletsproj
   * また同じく Qiita の [[Angular] base64 文字列をバイナリに戻してダウンロードする](https://qiita.com/ksh-fthr/items/b3e3afb7f8e51759a1ed) でバックエンドの実装として扱った
 
 # バージョン
+[pyenv](https://github.com/pyenv/pyenv) でバージョン管理を行っています。
 次のバージョンで確認を行っています。
 
-|        | バージョン |
-| ------ | ---------- |
-| Python | 3.9.13     |
+|        | バージョン | 備考 |
+| ------ | ---------- | ---- |
+| Python | 3.13.0     | [.python-version](.python-version)
 | Flask  | 2.1.0      |
 
 # ライブラリのインストール
