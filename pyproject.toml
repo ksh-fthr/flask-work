@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "flask-work"
+version = "0.1.0"
+description = ""
+authors = ["ksh-fthr <ksh.fthr0806@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+flask = "^3.0.3"
+flask-restful = "^0.3.10"
+flask-jwt-extended = "^4.6.0"
+flask-sqlalchemy = "^3.1.1"
+flask-cors = "^5.0.0"
+passlib = "^1.7.4"
+werkzeug = "^3.1.1"
+sqlalchemy = "^2.0.36"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

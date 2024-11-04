@@ -33,7 +33,7 @@ api.add_resource(router.Csv, '/csv')
 api.add_resource(router.Zip, '/zip')
 
 
-@app.before_first_request
+@app.before_request
 def create_tables():
   """
   DB、テーブルを生成する
@@ -41,7 +41,7 @@ def create_tables():
   db.create_all()
 
 
-@jwt.token_in_blacklist_loader
+@jwt.token_in_blocklist_loader
 def check_if_token_in_blacklist(decrypted_token):
   """
   トークンがブラックリストにあるか否かをチェックする

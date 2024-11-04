@@ -1,7 +1,7 @@
 from flask_restful import Resource
 from flask_jwt_extended import (
-    jwt_refresh_token_required,
-    get_raw_jwt
+    jwt_required,
+    get_jwt
 )
 from server.models.revoked_token import RevokedTokenModel
 
@@ -12,13 +12,13 @@ class UserLogoutRefresh(Resource):
     :param Resource: 親クラス。REST-API のリソースクラス
   """
 
-  @jwt_refresh_token_required
+  @jwt_required(refresh=True)
   def post(self):
     """
     logout/refresh API の POST メソッド。認証トークンを再発行する。
       :param self: UserLogoutRefresh クラスのインスタンス
     """
-    jti = get_raw_jwt()['jti']
+    jti = get_jwt()['jti']
     try:
       revoked_token = RevokedTokenModel(jti=jti)
       revoked_token.add()
