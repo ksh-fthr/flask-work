@@ -19,20 +19,21 @@ Python のマイクロフレームワークである [Flask](https://palletsproj
 
 |        | バージョン | 備考 |
 | ------ | ---------- | ---- |
-| Python | 3.13.0     | [.python-version](.python-version)
-| Flask  | 2.1.0      |
+| Python | 3.13.0     | [.python-version](.python-version) |
+| Flask  | 3.0.3      | [poetry.lock](poetry.lock) |
 
 # ライブラリのインストール
-`requirements.txt` で管理しています。
+[poetry](https://python-poetry.org/) で管理しています。
 本リポジトリを利用する際は、事前に下記を実行してライブラリのインストールを行い、依存関係を解決しておいてください。
 
 ```bash
-$ pip install -r requirements.txt
+$ poetry install
 ```
 
 # 起動
 次のコマンドでアプリケーションが起動します。
 
 ```bash
-$ python3 app/run.py
+# 仮想環境内でのコマンドの実行
+$ poetry run python app/run.py 
 ```
