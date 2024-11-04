@@ -1,7 +1,7 @@
 from flask_restful import Resource
 from flask_jwt_extended import (
     jwt_required,
-    get_raw_jwt
+    get_jwt
 )
 from server.models.revoked_token import RevokedTokenModel
 
@@ -12,13 +12,13 @@ class UserLogoutAccess(Resource):
     :param Resource: 親クラス。REST-API のリソースクラス
   """
 
-  @jwt_required
+  @jwt_required(refresh=True)
   def post(self):
     """
     logout/access API の POST メソッド。認証トークンを失効する。
       :param self: UserLogoutAccess クラスのインスタンス
     """
-    jti = get_raw_jwt()['jti']
+    jti = get_jwt()['jti']
     try:
       revoked_token = RevokedTokenModel(jti=jti)
       revoked_token.add()
