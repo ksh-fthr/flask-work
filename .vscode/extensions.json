@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "donjayamanne.python-extension-pack",
+        "ms-python.isort",
+        "ms-python.flake8",
+        "ms-python.black-formatter",
+        "ms-python.mypy-type-checker"
+    ]
+}
