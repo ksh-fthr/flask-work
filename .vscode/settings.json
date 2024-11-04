@@ -1,7 +1,7 @@
 {
   "files.eol": "\n",
   "flake8.args": [
-      "--ignore=E111, E114, E127, E402, E501, E722, F401"
+      // "--ignore=E127, E402, E501, E722, F401"
   ],
   "[python]": {
       "editor.tabSize": 4,
