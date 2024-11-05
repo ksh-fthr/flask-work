@@ -40,7 +40,7 @@ $ poetry install
 
 ```bash
 # 仮想環境内でのコマンドの実行
-$ poetry run python app/run.py 
+$ poetry run python app/run.py
 ```
 
 # フォーマッター
