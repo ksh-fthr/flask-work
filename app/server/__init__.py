@@ -2,12 +2,12 @@
 server ディレクトリ配下をモジュールとして扱うための初期処理
 """
 
-from flask import Flask
 from flask import jsonify  # response に JSON を返すの楽にしてくれる
+from flask import Flask
+from flask_cors import CORS
+from flask_jwt_extended import JWTManager  # JSON Web Token
 from flask_restful import Api  # HTTPメソッドと python コードのメソッドを対応させてくれる
 from flask_sqlalchemy import SQLAlchemy  # ORM
-from flask_jwt_extended import JWTManager  # JSON Web Token
-from flask_cors import CORS
 
 app = Flask(__name__)
 app.config.from_object("server.conf.config")
@@ -20,7 +20,6 @@ jwt = JWTManager(app)
 
 from server.models import revoked_token
 from server.resources import router
-
 
 # REST-API Routing
 api.add_resource(router.UserRegistration, "/registration")

@@ -1,8 +1,9 @@
+import csv
+from datetime import datetime, timedelta
+from io import StringIO
+
 from flask import Flask
 from flask_restful import Resource
-from datetime import datetime, timedelta
-import csv
-from io import StringIO
 
 
 class Csv(Resource):

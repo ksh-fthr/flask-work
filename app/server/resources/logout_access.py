@@ -1,5 +1,5 @@
+from flask_jwt_extended import get_jwt, jwt_required
 from flask_restful import Resource
-from flask_jwt_extended import jwt_required, get_jwt
 from server.models.revoked_token import RevokedTokenModel
 
 
