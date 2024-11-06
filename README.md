@@ -31,7 +31,7 @@ Python のマイクロフレームワークである [Flask](https://palletsproj
 本リポジトリを利用する際は、事前に下記を実行してパッケージのインストールを行い、依存関係を解決しておいてください。
 
 ```bash
-$ poetry install
+% poetry install
 ```
 
 # 起動
@@ -40,7 +40,7 @@ $ poetry install
 
 ```bash
 # 仮想環境内でのコマンドの実行
-$ poetry run python app/run.py
+% poetry run python app/run.py
 ```
 
 # フォーマッター
@@ -61,5 +61,5 @@ pre-commit installed at .git/hooks/pre-commit
 手動で実行したい場合は下記で実行できます。
 
 ```bash
-pre-commit run --all-files
+% pre-commit run --all-files
 ```
