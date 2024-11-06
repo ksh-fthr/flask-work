@@ -1,11 +1,12 @@
+import base64
+import csv
+import os
+import zipfile
+from datetime import datetime, timedelta
+from io import StringIO
+
 from flask import Flask
 from flask_restful import Resource
-from datetime import datetime, timedelta
-import csv
-from io import StringIO
-import zipfile
-import base64
-import os
 
 TMP_PATH = "./tmp"
 

@@ -1,5 +1,5 @@
-from flask_restful import Resource, reqparse
 from flask_jwt_extended import create_access_token, create_refresh_token
+from flask_restful import Resource, reqparse
 from server.models.user import UserModel
 
 parser = reqparse.RequestParser()

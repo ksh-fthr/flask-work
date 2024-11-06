@@ -5,16 +5,15 @@ repos:
       - id: black
         language_version: python3.13
 
-  # isort があると black と競合しているのか commit ができなくなるので一旦コメントアウト
-  # - repo: https://github.com/pre-commit/mirrors-isort
-  #   rev: v5.9.3
-  #   hooks:
-  #     - id: isort
-  #       args: ["--profile=black"]
-  #       name: isort (python)
-  #       entry: isort
-  #       language: python
-  #       types: [python]
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.9.3
+    hooks:
+      - id: isort
+        args: ["--profile=black"]
+        name: isort (python)
+        entry: isort
+        language: python
+        types: [python]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
