@@ -16,6 +16,7 @@ passlib = "^1.7.4"
 werkzeug = "^3.1.1"
 sqlalchemy = "^2.0.36"
 pre-commit = "^4.0.1"
+pydantic = "^2.10.5"
 
 
 [build-system]
