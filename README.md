@@ -31,7 +31,7 @@ Python のマイクロフレームワークである [Flask](https://palletsproj
 本リポジトリを利用する際は、事前に下記を実行してパッケージのインストールを行い、依存関係を解決しておいてください。
 
 ```bash
-% poetry install
+% poetry install --no-root
 ```
 
 # 起動
